@@ -1,9 +1,11 @@
-a = 0
-b = 1
+limite_inicial = int(input())
+limite_final = int(input())
 
-i = 1
-print(a)
-while i < 10:
-    i += 1
-    a, b = b, a + b
-    print(a)
+a, b = 0, 1
+
+
+while a <= limite_final:
+    if a >= limite_inicial:
+        print(a)
+    proximo_numero = a + b
+    a, b = b, proximo_numero
